@@ -1,0 +1,12 @@
+  .header
+   {
+    text-align:center;
+    color:white;
+   }
+body
+{
+ background-image: url('space.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size:99.5% 100%;
+}

@@ -1,0 +1,89 @@
+<!--Sarai Martinez-Luna, 10.24.22, web page for ordering Pizza in space/Assignment 05--!>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Supernova</title>
+  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body class="header">
+  <h1>Welcome to Supernova Pizzeria!</h1>
+  <form name="Space Pizza">
+   <h2 class="header">Customer Information</h2>
+    <table border="3" cellspacing="1" cellpadding="1">
+    <caption>*Only enter Address for delivery*</caption>
+    <tr>
+    <td align="center">First Name</td>
+    <td><input type=text></td>
+    </tr>
+
+    <tr>
+    <td align="center">Last Name</td>
+    <td><input type=text></td>
+    </tr>
+
+    <tr>
+    <td align="center">Identity Number</td>
+    <td><input type=text value="Ex:1234567"></td>
+    </tr>
+
+    <tr>
+    <td align="center">Galactic Address</td>
+    <td><input type=text value="location coordinates"><br>
+    <input type=radio name="planet" value="mercury">Mercury<br>
+    <input type=radio name="planet" value="venus">Venus<br>
+    <input type=radio name="planet" value="Mars">Mars<br>
+    <input type=radio name="planet" value="Jupiter">Jupiter<br>
+    <input type=radio name="planet" value="Saturn">Saturn<br>
+    <input type=radio name="planet" value="Uranus">Uranus<br>
+    <input type=radio name="planet" value="Neptune">Neptune<br>
+    <input type=radio name="planet" value="Pluto">Pluto
+    </td>
+    </tr>
+    </table>
+
+   <h2>Delivery Options</h2>
+    <input type=radio name="Delivery">Delivery<br>
+    <input type=radio name="Delivery">Pickup<br>
+    <input type=radio name="Delivery">Dine-in<br>
+    <textarea name="comments" rows=4 cols=40>Delivery Instructions or Comments</textarea>
+
+   <h2>Pizza Size</h2>
+    <label for="sizes">Choose a size:</label>
+    <select name="choices" id="sizes">
+     <option>Select</option>
+     <option>Microscopic</option>
+     <option>Personal</option>
+     <option>Medium</option>
+     <option>Large</option>
+     <option>Xtra Large</option>
+     <option>Mega monster (7ft wide)</option>
+     <option>Mega Monster Delux (25ft wide)</option>
+    </SELECT>
+
+   <h2>Crust Style</h2>
+    <input type=radio name="Crust">Original recipe<br>
+    <input type=radio name="Crust">Goo stuffed crust<br>
+    <input type=radio name="Crust">Thin and crispy<br>
+    <input type=radio name="Crust">Gluten free<br>
+
+   <h2>Toppings</h2>
+   <caption><b>Goos:</b></caption>
+    <input type=radio name="goo">Red Rasberry
+    <input type=radio name="goo">Blueberry
+    <input type=radio name="goo">Lemon Lime
+    <input type=radio name="goo">Savory Goo<br><br>
+    <input type=checkbox name="toppings">liptaro strips
+    <input type=checkbox name="toppings">fried zongs
+    <input type=checkbox name="toppings">tip tips
+    <input type=checkbox name="toppings">quaquat
+    <input type=checkbox name="toppings">saforonni
+    <input type=checkbox name="toppings">Kalamps<br>
+    <input type=checkbox name="toppings">yoogies
+    <input type=checkbox name="toppings">Wanalapigs
+    <input type=checkbox name="toppings">xanthroporticles
+    <input type=checkbox name="toppings">Veggies (*extra charge* Imported from planet earth)
+<br><br><br>
+    <input type="submit" value="Submit Order"><input type="reset" value="Reset">
+ </form>
+ </body>
+</html>
