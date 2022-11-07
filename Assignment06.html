@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Assignment 06
+  </title>
+  <script>
+   function choice()
+   {
+    alert("Say Hi to Batman for me!");
+   }
+   function glue()
+   {
+    document.querySelector("#name").value = 
+    document.querySelector("#left").value
+    + " "
+    + document.querySelector("#animal").value
+   }
+   function hey()
+   {
+    document.querySelector("#changeText").innerHTML = "You're officially a superhero, "+ document.querySelector("#left").value;
+   }
+  </script>
+ </head>
+ <body>
+  <form name=petname>
+  <h2>Superhero Name Generator!</h2>
+   Closest object to your left: <input type=text id="left" onchange="hey();"><br>
+   Favorite Animal: <input type=text id="animal" onchange="glue();"><br>
+   Superhero Name: <input type=text id="name"><br>
+  <br>
+   <b>Where would you like to fight crime?</b>
+  <br>
+   <input type=checkbox name="location">New York City<br>
+   <input type=checkbox name="location">Chicago<br>
+   <input type=checkbox name="location">Pittsburgh<br>
+   <input type=checkbox onclick="choice();" name="location">Gotham<br>
+  <br>
+   <div id=changeText>
+   Welcome.
+   </div>
+  <br>
+   <input type="reset" value="clear">
+  </form>
+ </body>
+</html>
