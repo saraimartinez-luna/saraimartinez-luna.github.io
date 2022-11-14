@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>
+  <title>Assignment07</title>
+  <script>
+   function doSum()
+    {
+     var sum=0;
+     var N = parseInt( document.querySelector("#N").value ); for (i=N; i<=n; i++) {sum += i;}
+     document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
+     var n = parseInt( document.querySelector("#n").value ); for (i=N; i<=n; i++) {sum += i;}
+     document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
+    }
+   function add()
+    {
+     document.querySelector("#full").value
+     = parseFloat(document.querySelector("#first").value)
+     + parseFloat(document.querySelector("#second").value); 
+    }
+   function subtract()
+    {
+     document.querySelector("#full").value
+     = parseFloat(document.querySelector("#first").value)
+     - parseFloat(document.querySelector("#second").value); 
+    }
+   function multiply()
+    {
+     document.querySelector("#full").value
+     = parseFloat(document.querySelector("#first").value)
+     * parseFloat(document.querySelector("#second").value); 
+    }
+   function divide()
+    {
+     document.querySelector("#full").value
+     = parseFloat(document.querySelector("#first").value)
+     / parseFloat(document.querySelector("#second").value); 
+    }
+   var bgToggle=true;function makeRed()
+    {
+     if (bgToggle) {document.querySelector('body').style.backgroundColor="red"; bgToggle=false;} 
+     else {document.querySelector('body').style.backgroundColor="white"; bgToggle=true;}
+    }
+   var bgToggle=true;function makeBlue()
+    {
+     if (bgToggle) {document.querySelector('body').style.backgroundColor="blue"; bgToggle=false;} 
+     else {document.querySelector('body').style.backgroundColor="white"; bgToggle=true;}
+    }
+   var bgToggle=true;function makePurple()
+    {
+     if (bgToggle) {document.querySelector('body').style.backgroundColor="purple"; bgToggle=false;} 
+     else {document.querySelector('body').style.backgroundColor="white"; bgToggle=true;}
+    }
+   var bgToggle=true;function makeOrange()
+    {
+     if (bgToggle) {document.querySelector('body').style.backgroundColor="orange"; bgToggle=false;} 
+     else {document.querySelector('body').style.backgroundColor="white";bgToggle=true;}
+    }
+  </script>
+ </head>
+ <body>
+  <form name=inclass>
+  <h2>Choose a background color</h2>
+   <input type=button value="Red" onclick="makeRed();">
+   <input type=button value="blue" onclick="makeBlue();">
+   <input type=button value="purple" onclick="makePurple();">
+   <input type=button value="orange" onclick="makeOrange();">
+  <br>
+  <h2>Calculator</h2>
+   <input type=text id="first">
+   <input type=button value="+" onclick="add();">
+   <input type=button value="-" onclick="subtract();">
+   <input type=button value="*" onclick="multiply();">
+   <input type=button value="/" onclick="divide();">
+   <input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
+   <input type=text id="full">
+  <br>
+  <h2>Summation! Pick where to start and end</h2>
+   Starting number: <input type=text id="N">
+  <br>
+   Ending number: <input type=text id="n">
+  <br>
+   <input type=button value="Start the sum" onclick="doSum();">
+   <div id="sumHere"> Your sum is: </div>
+  <br>
+   <input type="reset" value="Clear">
+  </form>
+ </body>
+</html>
