@@ -2,8 +2,43 @@
 <html lang="en">
  <head>
   <title>Brass</title>
+  <script>
+   function trumpet()
+   {
+    alert("The Trumpet is the smallest member of its family and has the highest pitches. It has 3 valves that produce various pitches when pressed down in different combinations.")
+   }
+   function trombone()
+   {
+    alert("The Trombone is the only brass instrument to have a slide rather than valves for changing pitch. To change pitch you push or pull the slide to 1 of 7 positions.")
+   }
+   function french()
+   {
+    alert("The French Horn has extensive tubing compacted in its body, with a mouth piece on one end and a horn on the other. The tubing stretched out runs 18ft. This is the most common horn found in orchestras.")
+   }
+   function tuba()
+   {
+    alert("The Tuba is the lowest-pitched brass instrument. It is quite larger than the rest and can have 3 to 6 valvues to produce different pitches.")
+   }
+   function choice()
+   {
+    document.querySelector("#changeText").innerHTML = "Congratulations!!!! You chose the "+ document.querySelector("#fav").value + ". Good luck learning you're new instrument. No takebacks."
+   }
+  </script>
  </head>
- <body>
-  hello
+ <body style="background-color:#fadd85;">
+  <h2>Here are the 4 main brass instruments</h2>
+   Select one to see more information<br>
+   <input type=radio name="main" onclick="trumpet();">Trumpet<br>
+   <input type=radio name="main" onclick="trombone();">Trombone<br>
+   <input type=radio name="main" onclick="french();">French Horn<br>
+   <input type=radio name="main" onclick="tuba();">Tuba<br><br>
+  
+  Pick your favorite: <input type=text id="fav" onchange="choice();"><br><br>
+  <div id=changeText>
+  Your instrument is: 
+  </div>
+  
  </body>
 </html>
+
+<!--maybe add a go back to home button-->

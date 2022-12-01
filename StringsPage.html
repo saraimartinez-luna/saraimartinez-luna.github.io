@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <title>Strings</title>
+  <script>
+   function luck()
+    {
+     document.querySelector("#done").innerHTML = "This is a great start! Go to your local music store and explore your top choices. Good Luck!!"
+    }
+  </script>
+ </head>
+ <body style="background-color:#ffeccd;">
+  <h1>String Instruments</h1>
+  For this catagory of instrument, sound is created by stricking a string or strumming multiple to create layers of sounds. The manipulation and vibration of the strings transfers into the body of the instrument and resonates with the air inside to create the sounds we hear.
+  <br><br>
+  <table border="3" cellspacing="1" cellpadding="1">
+   <caption>3 most common classifications of string instruments</caption>
+    <tr>
+     <td>Lute</td>
+     <td>Ex: Lute, Acoustic/Electric Guitar, Ukulele, Banjo, Mandolin</td>
+    </tr>
+    <tr>
+     <td>Violin</td>
+     <td>Ex: Violin, Cello, Viola, Double Bass</td>
+    </tr>
+    <tr>
+     <td>Lyre</td>
+     <td>Ex: Lyre, Harp</td>
+    </tr>
+  </table>
+  <form name="new">
+   <h1>Pick your top 3: </h1>
+    *Click "Done" once you're sure of your choices*<br><br>
+    <input type=checkbox name="type">Lute<br>
+    <input type=checkbox name="type">Acoustic Guitar<br>
+    <input type=checkbox name="type">Electric Guitar<br>
+    <input type=checkbox name="type">Ukulele<br>
+    <input type=checkbox name="type">Banjo<br>
+    <input type=checkbox name="type">Mandolin<br>
+    <input type=checkbox name="type">violin<br>
+    <input type=checkbox name="type">Cello<br>
+    <input type=checkbox name="type">Viola<br>
+    <input type=checkbox name="type">Double Bass<br>
+    <input type=checkbox name="type">Lyre<br>
+    <input type=checkbox name="type">Harp<br>
+    <input type="reset" value="clear"><input type=button value="Done" onclick="luck();">
+  </form>
+   <br>
+   <div id="done"></div>
+   <br><br>
+ </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <title>Percussion</title>
+  <script>
+   function confChkM() 
+   {
+    var areYouSure = confirm("Are you sure?");
+    if (areYouSure) {alert("Fantastic choice!");} 
+    else {alert("Well, I guess you like Idiophones more. Click on Idiophone to get some more choices");}
+   }
+   function confChkI() 
+   {
+    var areYouSure = confirm("Are you sure?");
+    if (areYouSure) {alert("Fantastic choice!");} 
+    else {alert("Well, I guess you like Membranophones more. Click on Membranophones to get some more choices");}
+   }
+   function M()
+   {
+    document.querySelector("#pick").innerHTML = "Try any of the choices below:<br>Drums, Bongos, or Congas"
+   }
+   function I()
+   {
+    document.querySelector("#pick").innerHTML = "Try any of the choices below:<br>Xylophone, Gong, or Symbols"
+   }
+  </script>
+ </head>
+ <body style="background-color:#ffb6b1;">
+  <h2>Background</h2>
+  Percussive instruments require an impact. Sound is produced through the percussive action of one object stricking another. What are thought to be the oldest musical instruments in history come from this catagory. They can also be pitched or unpitched.
+  <br>
+
+  <h2>2 Main Types</h2>
+  <ol>
+   <li>Membranophone</li>
+    <ul>
+     <li>Have a thin layer that is stretched very tightly over a frame</li>
+     <li>Ex: Snare drum, tom drums</li>
+    </ul>
+   <li>Idiophone</li>
+    <ul>
+     <li>Produce sound from the vibrations of the entire instrument when struck</li>
+     <li>Ex: Cymbals</li>
+    </ul>
+  </ol>
+  
+  <h2>Time to pick</h2>
+   <input type=button value="Idiophone" onclick="confChkI(); I();"> &nbsp; &nbsp;
+   <input type=button value="Membranophone" onclick="confChkM(); M();"> &nbsp; &nbsp;
+  <br><br>
+  <div id="pick"></div>
+ </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html land="en">
+ <head>
+  <title>Woodwinds</title>
+  <script>
+   function flute()
+   {
+    document.querySelector("#yay").innerHTML = "Very nice choice!! The flute is so easy to carry and take apart, you'll have no trouble taking it around with you. Good luck!"
+   }
+   function piccolo()
+   {
+    document.querySelector("#yay").innerHTML = "Wonderful choice! They are small flutes, so travel will be quite easy. Good luck!"
+   }
+   function recorder()
+   {
+    document.querySelector("#yay").innerHTML = "Good choice! This is the perfect instrument to learn the basics of music. Good luck!"
+   }
+   function irish()
+   {
+    document.querySelector("#yay").innerHTML = "Great choice! This wooden flute has such a unique sound. Good luck!"
+   }
+   function clarinet()
+   {
+    document.querySelector("#yay").innerHTML = "Fantastic! You won't have any issues finding your first clarinet. It is one of the most popular instruments in the woodwind family. Good luck!"
+   }
+   function bassoon()
+   {
+    document.querySelector("#yay").innerHTML = "Excellent choice! This instrument is huge in orchestras. You might have found yourself a future career. Good luck!"
+   }
+   function oboe()
+   {
+    document.querySelector("#yay").innerHTML = "Delightful choice! One of the few instruments that uses a double-reed. Good luck! "
+   }
+   function bagpipes()
+   {
+    document.querySelector("#yay").innerHTML = "Fantastic choice! Not many are brave enough to pick this instrument. Good luck!"
+   }
+  </script>
+ </head>
+ <body style="background-color:#e5fbff;">
+  <h1>Woodwind Instruments</h1>
+   These instruments create sound when wind passes through a hole or reed (thin strip of material, used in mouthpiece) to create vibrations that produce sound. Not all woodwind instruments are made of wood, some like the saxaphone, which also belongs to the brass family, are woodwinds becasue they use a reed.
+  <br><br>
+  <h1>Subgroups</h1>
+    <ol>
+     <li>Flutes</li>
+      <ul>
+       <li>Produce sound when air is blown into it and moves through the body. The instrument has holes all up and down its body, that when covered/uncovered, manipulate the air moving through it to produce various notes.</li>
+       <li>Also known as Aerophones</li>
+       <li style=font-size:large;>Flutes, Piccolo, Recorder, Irish Flute</b></li>
+      </ul>
+     <li>Reed</li>
+      <ul>
+       <li>Require a reed that vibrates as air passes through it to produce sound. Notes are manipulated through holes in the body in the same manner as flutes. </li>
+       <li style=font-size:large;>Clarinet, Bassoon, Oboe, Bagpipes</li>
+      </ul>
+    </ol>
+   <h2>Pick the one you're most curious about</h2>
+    Flutes: <input type=button value="Flute" onclick="flute();"> &nbsp; &nbsp;
+    <input type=button value="Piccolo" onclick="piccolo();"> &nbsp; &nbsp;
+    <input type=button value="Recorder" onclick="recorder();"> &nbsp; &nbsp;
+    <input type=button value="Irish Flute" onclick="irish();"><br><br>
+    Reed: <input type=button value="Clarinet" onclick="clarinet();"> &nbsp; &nbsp;
+    <input type=button value="Bassoon" onclick="bassoon();"> &nbsp; &nbsp;
+    <input type=button value="Oboe" onclick="oboe();"> &nbsp; &nbsp;
+    <input type=button value="Bagpipes" onclick="bagpipes();">
+  <br><br>
+  <div id="yay"></div>
+ </body>
+</html>

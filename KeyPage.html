@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <title>Keyboards</title>
+  <script>
+   function piano()
+   {
+    document.querySelector("#choice").innerHTML = "Great choice! Grand and Upright pianos are large and more expensive, so I suggest starting with a Digital Piano. Good luck!"
+   }
+   function organ()
+   {
+    document.querySelector("#choice").innerHTML = "WOW!! I respect the commitment of your choice, time to start looking for churches and concert halls to practice. Good luck!"
+   }
+   function synth()
+   {
+    document.querySelector("#choice").innerHTML = "Very nice!! You'll have lots of freedom with your music, Good luck!"
+   }
+  </script>
+ </head>
+ <body>
+  <h2>3 Common Keyboard Instruments</h2>
+  <table border="3" cellspacing="1" cellpadding="1">
+   <tr>
+    <td align="center">Piano</td>
+    <td>This catagory includes The Grand Piano, The Upright Piano, and The Digital Piano.<br>Both the grand and upright pianos use a hammer like mechanism to strike a tightly tuned string instead of plucking it. The main deffernce between the two is the placement of the strings in relation to the keyboard. The digital piano is all programmed software and allows the user to connect to computers or other instruments for varous effects. </td>
+   </tr>
+
+    <tr>
+    <td align="center">Organ</td>
+    <td>Organs can have up to 4 keyboards which produce sound when air is blown upwards through pipes. This movemennt of air causes vibrations that make a distinct sounds. Because of the pipes and various keyboards, it has the range of 8 octaves, the largest on any musical instrument. This also makes it quite large, so its use is mostly in churches and concert halls.</td>
+   </tr>
+
+    <tr>
+    <td align="center">Various Keyboards</td>
+    <td>This catagory includes the Electronic Keyboard and Synthesizer.<br> A synthesizer requires the input of data in order to produce a sound. Most electronic keyboards are actually sythesizers with a built-in amplifier and small loudspeakers, making the terms electronic keyboard and synthesizer interchangable,as they usually refer to the same thing.</td>
+   </tr>
+  </table>
+  <br><br>
+  <h2>Which one do you prefer?</h2>
+   <input type=button value="Piano" onclick="piano();"> &nbsp; &nbsp;
+   <input type=button value="Organ" onclick="organ();"> &nbsp; &nbsp;
+   <input type=button value="Synthesizer" onclick="synth();">
+  <br><br>
+  <div id="choice">Your instrument is...</div>
+ </body>
+</html>
